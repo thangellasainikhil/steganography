@@ -1,0 +1,1 @@
+This directory to store uploaded images for temporary purpose by the end of the session the contenets will be deleted.

@@ -1,0 +1,20 @@
+CREATE DATABASE STEG;
+USE STEG;
+CREATE TABLE users(
+    userid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(255) NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    upassword CHAR(128) NOT NULL
+);
+CREATE TABLE util(
+    utilid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    fernetkey CHAR(128) NOT NULL
+);
+CREATE TABLE images(
+    imgid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    imgname VARCHAR(255) NOT NULL,
+    imgdesc VARCHAR(255) DEFAULT "",
+	   imgtime DATETIME DEFAULT NOW(),
+    userid INT NOT NULL,
+    FOREIGN KEY(userid) REFERENCES users(userid)
+);

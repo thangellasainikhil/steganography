@@ -1,0 +1,7 @@
+.btn:hover{
+
+    box-shadow: 2px 5px 10px whitesmoke;
+    transform: scale(1.08);
+    transition-duration: 0.05s;
+
+}

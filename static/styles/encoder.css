@@ -1,0 +1,43 @@
+.btn:hover{
+
+    transform: scale(1.08);
+    transition-duration: 0.8s;
+
+}
+
+.pin-digit-1,
+.pin-digit-2,
+.pin-digit-3,
+.pin-digit-4,
+.pin-digit-5,
+.pin-digit-6{
+
+    cursor: pointer;
+    text-align: center;
+    height: 58px;
+
+    border-radius: 10px;
+    font-size: large;
+
+}
+
+.pin-digit-1:hover,
+.pin-digit-2:hover,
+.pin-digit-3:hover,
+.pin-digit-4:hover,
+.pin-digit-5:hover,
+.pin-digit-6:hover{
+
+    transform: scale(1.3);
+
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  size: 58px;
+}
